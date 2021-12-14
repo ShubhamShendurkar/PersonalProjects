@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15 Jun, 2021 6:45:23 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.pojo.Supplier" table="supplier" catalog="pharma">
+        <id name="supid" type="java.lang.Integer">
+            <column name="supid" />
+            <generator class="identity" />
+        </id>
+        <property name="sname" type="string">
+            <column name="sname" length="200" />
+        </property>
+        <property name="smobile" type="string">
+            <column name="smobile" length="200" />
+        </property>
+        <property name="semail" type="string">
+            <column name="semail" length="200" />
+        </property>
+        <property name="saddress" type="string">
+            <column name="saddress" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>
